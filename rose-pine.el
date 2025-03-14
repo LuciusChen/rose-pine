@@ -76,19 +76,19 @@ executed."
               (pine           . "#81a2be")
               (iris           . "#b294bb")
 
-              (bg-added           . "#00553a")
+              (bg-added           . "#00997a")
               (bg-added-faint     . "#00402c")
               (bg-added-refine    . "#00704e")
               (fg-added           . "#c0f0c0")
               (fg-added-intense   . "#a0e0a0")
 
-              (bg-changed         . "#4a4a00")
+              (bg-changed         . "#b3b300")
               (bg-changed-faint   . "#363300")
               (bg-changed-refine  . "#5e5e00")
               (fg-changed         . "#ffff99")
               (fg-changed-intense . "#e0d060")
 
-              (bg-removed         . "#781a3a")
+              (bg-removed         . "#a8567a")
               (bg-removed-faint   . "#5a102c")
               (bg-removed-refine  . "#8c2448")
               (fg-removed         . "#ffcccc")
@@ -232,18 +232,13 @@ names to which it refers are bound."
       (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
       (line-number (:inherit default :background ,background :foreground ,comment))
       (line-number-current-line (:inherit line-number :foreground ,foreground :weight bold))
-      (fill-column-indicator (:foreground ,contrast-bg :weight normal :slant normal
-                                          :underline nil :overline nil :strike-through nil
-                                          :box nil :inverse-video nil :stipple nil))
+      (fill-column-indicator (:foreground ,contrast-bg :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :stipple nil))
       (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))
       (highlight (:inverse-video nil :background ,highlight))
       (mode-line (:foreground ,foreground :background ,background :weight normal :box (:line-width 1 :color ,foreground)))
       (mode-line-buffer-id (:foreground ,iris :background unspecified))
-      (mode-line-inactive (:inherit mode-line
-                                    :foreground ,comment
-                                    :background ,highlight
-                                    :weight normal))
+      (mode-line-inactive (:inherit mode-line :foreground ,comment :background ,highlight :weight normal))
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,iris :box nil :weight bold))
       (minibuffer-prompt (:foreground ,pine))
@@ -717,10 +712,10 @@ names to which it refers are bound."
 
       ;; tab-bar (built-in)
       (tab-bar (:foreground ,comment :background ,background :height 0.95))
-      (tab-bar-tab-group-current (:inherit bold :background ,background :box (:line-width -2 :color ,background) :foreground ,highlight))
-      (tab-bar-tab-group-inactive (:background ,background :box (:line-width -2 :color ,background) :foreground ,highlight))
-      (tab-bar-tab (:inherit bold :box (:line-width -2 :color ,background) :background ,background :foreground ,foreground :underline (:style line :color ,foreground)))
-      (tab-bar-tab-inactive (:box (:line-width -2 :color ,background) :foreground ,comment :background ,background))
+      (tab-bar-tab-group-current (:inherit bold :background ,background :foreground ,highlight :box (:line-width -2 :color ,background)))
+      (tab-bar-tab-group-inactive (:background ,background :foreground ,highlight :box (:line-width -2 :color ,background)))
+      (tab-bar-tab (:inherit bold :background ,background :foreground ,foreground :box (:line-width -2 :color ,background) :underline (:style line :color ,foreground)))
+      (tab-bar-tab-inactive (:foreground ,comment :background ,background :box (:line-width -2 :color ,background)))
       (tab-bar-tab-ungrouped (:inherit tab-bar-tab-inactive))
 
       ;; tab-line (built-in)
@@ -728,8 +723,8 @@ names to which it refers are bound."
       (tab-line-close-highlight (:foreground ,rose))
       (tab-line-highlight (:inherit highlight))
       (tab-line-tab ())
-      (tab-line-tab-current (:inherit bold :box (:line-width -2 :color ,background) :background ,background :foreground ,foreground))
-      (tab-line-tab-inactive (:box (:line-width -2 :color ,background) :background ,highlight :foreground ,comment))
+      (tab-line-tab-current (:inherit bold :background ,background :foreground ,foreground :box (:line-width -2 :color ,background) :underline (:style line :color ,foreground)))
+      (tab-line-tab-inactive (:background ,highlight :foreground ,comment :box (:line-width -2 :color ,background) ))
       (tab-line-tab-modifie (:foreground ,gold))
 
       ;; which-function (built-in)
@@ -755,18 +750,9 @@ names to which it refers are bound."
       (window-divider-last-pixel (:foreground ,contrast-bg))
 
       ;; window-tool-bar (built-in)
-      (window-tool-bar-button (:background ,contrast-bg
-					   :foreground ,iris
-					   :inverse-video nil
-					   :box (:line-width 1 :style released-button)))
-      (window-tool-bar-button-disabled (:inherit tab-line
-					         :foreground ,comment
-					         :inverse-video nil
-					         :box (:line-width 1 :style released-button)))
-      (window-tool-bar-button-hover (:background ,low-contrast-bg
-					         :foreground ,pine
-					         :inverse-video nil
-					         :box (:line-width 1 :style released-button)))
+      (window-tool-bar-button (:background ,contrast-bg :foreground ,iris :inverse-video nil :box (:line-width 1 :style released-button)))
+      (window-tool-bar-button-disabled (:inherit tab-line :foreground ,comment :inverse-video nil :box (:line-width 1 :style released-button)))
+      (window-tool-bar-button-hover (:background ,low-contrast-bg :foreground ,pine :inverse-video nil :box (:line-width 1 :style released-button)))
 
       ;; ace-window
       (aw-background-face (:foreground ,contrast-bg))
