@@ -959,7 +959,7 @@ names to which it refers are bound."
       (diredfl-dir-priv (:foreground ,foam :background unspecified))
       (diredfl-exec-priv (:foreground ,gold :background unspecified))
       (diredfl-executable-tag (:foreground ,rose :background unspecified))
-      (diredfl-file-name (:foreground ,love))
+      (diredfl-file-name (:foreground ,foreground))
       (diredfl-file-suffix (:foreground ,leaf))
       (diredfl-flag-mark (:foreground ,leaf :inverse-video t))
       (diredfl-flag-mark-line (:background unspecified :inherit highlight))
@@ -1658,7 +1658,7 @@ names to which it refers are bound."
       (telega-msg-heading (:background ,background))
       (telega-msg-self-title (:foreground ,gold :weight bold))
       (telega-root-heading (:foreground ,iris :background ,highlight :inherit bold))
-      (telega-mention-count (:inherit bold :foreground ,rose))
+      (telega-mention-count (:inherit bold :foreground ,amber))
 
       ;; corfu
       (corfu-current (:background ,contrast-bg))
