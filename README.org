@@ -1,0 +1,49 @@
+* Introduction
+This theme, "Rosé Pine for Emacs", is designed for use with Emacs' built-in theme support in Emacs 24 or later. It provides a color palette inspired by the Rosé Pine theme, offering a soothing and aesthetically pleasing experience for your coding environment.
+
+* Installation
+To use Rosé Pine, ensure you have Emacs version 24.1 or newer. You can install the theme from MELPA or directly from the repository.
+
+** Manual Installation
+Clone the repository and add it to your `load-path`:
+
+#+BEGIN_SRC shell
+git clone https://github.com/LuciusChen/rose-pine.git ~/.emacs.d/rose-pine
+#+END_SRC
+
+Add the following to your Emacs init file:
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'custom-theme-load-path "~/.emacs.d/rose-pine")
+#+END_SRC
+
+* Usage
+To activate the theme, use either of the following commands:
+
+#+BEGIN_SRC emacs-lisp
+M-x load-theme RET rose-pine-night RET
+M-x load-theme RET rose-pine-day RET
+#+END_SRC
+
+Alternatively, you can programmatically enable the theme in your configuration:
+
+#+BEGIN_SRC emacs-lisp
+(load-theme 'rose-pine-night t)
+#+END_SRC
+
+* Customization
+Rosé Pine provides two variants:
+- =rose-pine-night=: A dark theme suitable for low-light environments.
+- =rose-pine-day=: A light theme ideal for bright conditions.
+
+* Credits
+The original color selection was inspired by the Rosé Pine palette: https://rosepinetheme.com/palette/ingredients/
+
+* License
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+* Contributing
+Contributions are welcome! Feel free to submit issues or pull requests on the GitHub repository: https://github.com/LuciusChen/rose-pine
+
+* Contact
+For any questions or suggestions, contact Lucius at <chenyh572@gmail.com>.
