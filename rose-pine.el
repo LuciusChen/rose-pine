@@ -240,9 +240,9 @@ names to which it refers are bound."
       (help-argument-name (:inherit italic :foreground ,love))
       (help-key-binding (:inherit bold :foreground ,love))
       (highlight (:inverse-video nil :background ,highlight))
-      (mode-line (:foreground ,foreground :background ,background :weight normal :box (:line-width -1 :color ,foreground)))
+      (mode-line (:foreground ,foreground :background ,background :weight normal :box (:line-width 1 :color ,foreground)))
       (mode-line-buffer-id (:foreground ,iris :background unspecified))
-      (mode-line-inactive (:foreground ,comment :background ,highlight :weight normal))
+      (mode-line-inactive (:inherit mode-line :foreground ,comment :background ,highlight :box (:line-width 1 :color ,comment)))
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,iris :box nil :weight bold))
       (minibuffer-prompt (:foreground ,pine))
@@ -250,7 +250,7 @@ names to which it refers are bound."
       (secondary-selection (:background ,contrast-bg :extend t))
       (rectangle-preview (:inherit secondary-selection))
 
-      (header-line (:inherit mode-line-inactive :foreground ,foam :background unspecified))
+      (header-line (:foreground ,foam :background unspecified))
       (header-line-highlight (:inherit highlight))
 
       ;; search
