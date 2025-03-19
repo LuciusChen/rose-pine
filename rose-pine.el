@@ -250,7 +250,8 @@ names to which it refers are bound."
       (secondary-selection (:background ,contrast-bg :extend t))
       (rectangle-preview (:inherit secondary-selection))
 
-      (header-line (:inherit mode-line-inactive :foreground ,foam :background unspecified))
+      (header-line (:background ,contrast-bg))
+      (header-line-highlight (:inherit highlight))
 
       ;; search
       (match (:foreground ,foam :background ,contrast-bg))
