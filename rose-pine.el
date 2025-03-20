@@ -357,7 +357,7 @@ names to which it refers are bound."
       (ediff-odd-diff-B (:foreground ,gold :background ,contrast-bg :extend t))
       (ediff-odd-diff-C (:foreground ,gold :background ,contrast-bg :extend t))
 
-      ;; Eglot
+      ;; Eglot (built-in)
       (eglot-inlay-hint-face (:height 0.8 :inherit shadow :slant italic))
       ;; ElDoc (built-in)
       (eldoc-highlight-function-argument (:foreground ,leaf :weight bold))
@@ -1648,12 +1648,6 @@ names to which it refers are bound."
       (tuareg-font-lock-interactive-output-face)
       (tuareg-font-lock-interactive-directive-face)
 
-      ;; twittering-mode
-      (twittering-username-face (:inherit erc-pal-face))
-      (twittering-uri-face (:foreground ,pine :inherit link))
-      (twittering-timeline-header-face (:foreground ,leaf :weight bold))
-      (twittering-timeline-footer-face (:inherit twittering-timeline-header-face))
-
       ;; undo-tree
       (undo-tree-visualizer-default-face (:foreground ,foreground))
       (undo-tree-visualizer-current-face (:foreground ,leaf :weight bold))
@@ -1662,13 +1656,6 @@ names to which it refers are bound."
 
       ;; vertico
       (vertico-current (:background ,contrast-bg :extend t))
-
-      ;; visual-regexp
-      (vr/match-0 (:foreground ,love :background ,background :inverse-video t))
-      (vr/match-1 (:foreground ,foam :background ,background :inverse-video t))
-      (vr/group-0 (:foreground ,iris :background ,background :inverse-video t))
-      (vr/group-1 (:foreground ,leaf :background ,background :inverse-video t))
-      (vr/group-2 (:foreground ,gold :background ,background :inverse-video t))
 
       ;; vterm
       (vterm-color-black (:background ,term-black :foreground ,term-black))
@@ -1691,23 +1678,12 @@ names to which it refers are bound."
       (web-mode-html-tag-bracket-face (:inherit font-lock-function-name-face))
       (web-mode-symbol-face (:inherit font-lock-constant-face))
 
-      ;; weechat
-      (weechat-highlight-face (:foreground ,gold))
-      (weechat-nick-self-face (:foreground ,leaf))
-      (weechat-time-face (:foreground ,foam))
-
       ;; wgrep
       (wgrep-delete-face (:foreground ,rose))
       (wgrep-done-face (:foreground ,pine))
       (wgrep-face (:foreground ,leaf :background ,contrast-bg))
       (wgrep-file-face (:foreground ,comment :background ,contrast-bg))
       (wgrep-reject-face (:foreground ,gold :weight bold))
-
-      ;; xcscope
-      (cscope-file-face (:foreground ,leaf))
-      (cscope-function-face (:foreground ,pine))
-      (cscope-line-number-face (:foreground ,rose))
-      (cscope-separator-face (:bold t :overline t :underline t :foreground ,iris))
 
       ;; uiua
       (uiua-number (:foreground ,gold))
@@ -1746,7 +1722,13 @@ names to which it refers are bound."
       ;; goggles
       (goggles-changed (:background ,amber))
       (goggles-removed (:background ,love))
-      (goggles-added (:background ,foam))))))
+      (goggles-added (:background ,foam))
+
+      ;; go-translate
+      (gt-buffer-render-block-prefix-face (:background ,contrast-bg :foregorund foregorund))
+
+      ))))
+
 
 (eval-and-compile
   (defun rose-pine--theme-name (mode)
