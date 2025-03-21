@@ -642,6 +642,8 @@ names to which it refers are bound."
       (org-modern-time-active (:inherit org-modern-label :background ,foam :foreground ,foreground))
       (org-modern-time-inactive (:inherit (org-modern-label org-modern-date-inactive)))
       (org-modern-todo (:inherit org-modern-label :background ,rose :foreground ,foreground))
+      (org-modern-progress-complete (:background ,leaf :foreground ,foam))
+      (org-modern-progress-incomplete (:background ,contrast-bg :foreground ,foreground))
 
       ;; doom-modeline
       (doom-modeline-bar (:background ,iris))
