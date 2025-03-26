@@ -1,6 +1,7 @@
 * Introduction
 This theme, "Rosé Pine for Emacs", is designed for use with Emacs' built-in theme support in Emacs 24 or later. It provides a color palette inspired by the Rosé Pine theme, offering a soothing and aesthetically pleasing experience for your coding environment.
 
+[[./screenshot][Screenshots]]
 * Installation
 To use Rosé Pine, ensure you have Emacs version 24.1 or newer. You can install the theme from MELPA or directly from the repository.
 
