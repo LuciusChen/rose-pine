@@ -1715,7 +1715,7 @@ names to which it refers are bound."
       (telega-msg-heading (:background ,background))
       (telega-msg-self-title (:foreground ,gold :weight bold))
       (telega-root-heading (:foreground ,iris :background ,highlight :inherit bold))
-      (telega-mention-count (:inherit bold :foreground ,amber))
+      (telega-mention-count (:inherit bold :foreground ,love))
       (telega-reaction-chosen (:background ,foam))
       (telega-box-button (:foreground ,foam :box (:line-width (-2 . -2) :color ,foam)))
 
