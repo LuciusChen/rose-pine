@@ -523,6 +523,9 @@ names to which it refers are bound."
 
       ;; icomplete (built-in)
       (icomplete-first-match (:foreground ,leaf :weight bold))
+      (icomplete-vertical-selected-prefix-indicator-face (:inherit bold :foreground ,gold))
+      (icomplete-vertical-unselected-prefix-indicator-face (:inherit shadow))
+      (icomplete-selected-match (:inherit icomplete-first-match))
 
       ;; IDO (built-in)
       (ido-subdir (:foreground ,iris))
