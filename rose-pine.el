@@ -525,7 +525,7 @@ names to which it refers are bound."
       (icomplete-first-match (:foreground ,leaf :weight bold))
       (icomplete-vertical-selected-prefix-indicator-face (:inherit bold :foreground ,gold))
       (icomplete-vertical-unselected-prefix-indicator-face (:inherit shadow))
-      (icomplete-selected-match (:inherit icomplete-first-match))
+      (icomplete-selected-match (:inherit icomplete-first-match :background ,highlight))
 
       ;; IDO (built-in)
       (ido-subdir (:foreground ,iris))
@@ -1752,7 +1752,7 @@ names to which it refers are bound."
       ;; completions
       (completions-annotations (:foreground ,iris))
       (completions-common-part (:inherit match))
-      (completions-first-difference (:inherit secondary-selection :underline t))
+      (completions-first-difference (:foreground ,rose :underline t))
       (completions-highlight (:background ,contrast-bg))
       ;; consult
       (consult-async-split (:inherit error))
