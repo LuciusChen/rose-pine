@@ -229,6 +229,10 @@ names to which it refers are bound."
       ;; Emacs interface
       (cursor (:background ,rose))
       (fringe (:background ,low-contrast-bg :foreground ,comment))
+      (menu (:background ,low-contrast-bg :foreground ,foreground))
+      (scroll-bar (:background ,highlight :foreground ,pine))
+      (tool-bar (:background ,highlight :foreground ,foreground))
+      (vertical-border (:foreground ,pine))
       (linum (:background ,low-contrast-bg :foreground ,comment :italic nil :underline nil))
       (line-number (:inherit default :background ,background :foreground ,comment))
       (line-number-current-line (:inherit line-number :background ,low-contrast-bg :foreground ,foreground :weight bold))
@@ -1245,6 +1249,12 @@ names to which it refers are bound."
 
       ;; hl-sexp
       (hl-sexp-face (:background ,contrast-bg))
+
+      ;; highlight
+      (hl-line (:background ,highlight :extend t))
+
+      ;;;;; hl-fill-column
+      (hl-fill-column-face (:background ,background))
 
       ;; highlight-80+
       (highlight-80+ (:background ,contrast-bg))
