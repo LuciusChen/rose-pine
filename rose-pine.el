@@ -34,7 +34,6 @@
 ;; or use customize-themes' to select a theme interactively.
 
 ;; Alternatively, use the provided command to activate the theme:
-
 ;;     M-x load-theme RET rose-pine RET
 ;;
 ;;; Credit:
@@ -70,7 +69,7 @@ executed."
               (rose           . "#ebbcba")
               (gold           . "#f6c177")
               (love           . "#eb6f92")
-              (amber          . "#f6d06e")
+              (amber          . "#dcdcaa")
               (leaf           . "#95b1ac")
               (foam           . "#9ccfd8")
               (pine           . "#81a2be")
@@ -102,7 +101,7 @@ executed."
             (rose           . "#d7827e")
             (gold           . "#ea9d34")
             (love           . "#b4637a")
-            (amber          . "#e9c987")
+            (amber          . "#795e26")
             (leaf           . "#568D68")
             (foam           . "#56949f")
             (pine           . "#286983")
@@ -197,8 +196,8 @@ names to which it refers are bound."
       (font-lock-doc-face (:foreground ,iris))
       (font-lock-doc-string-face (:foreground ,love))
       (font-lock-escape-face (:foreground ,love))
-      (font-lock-function-call-face (:foreground ,gold))
-      (font-lock-function-name-face (:foreground ,rose))
+      (font-lock-function-call-face (:foreground ,amber))
+      (font-lock-function-name-face (:foreground ,amber))
       (font-lock-keyword-face (:foreground ,leaf))
       (font-lock-misc-punctuation-face (:inherit font-lock-punctuation-face))
       (font-lock-negation-char-face (:foreground ,gold))
@@ -227,7 +226,7 @@ names to which it refers are bound."
       (tooltip (:foreground ,love :background ,background :inverse-video t))
 
       ;; Emacs interface
-      (cursor (:background ,rose))
+      (cursor (:background ,love))
       (fringe (:background ,low-contrast-bg :foreground ,comment))
       (menu (:background ,low-contrast-bg :foreground ,foreground))
       (scroll-bar (:background ,highlight :foreground ,pine))
@@ -1824,7 +1823,7 @@ names to which it refers are bound."
       ;; completions
       (completions-annotations (:foreground ,iris))
       (completions-common-part (:inherit match))
-      (completions-first-difference (:foreground ,rose :underline t))
+      (completions-first-difference (:foreground ,rose))
       (completions-highlight (:background ,contrast-bg))
       ;; consult
       (consult-async-split (:inherit error))
