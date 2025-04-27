@@ -705,7 +705,8 @@ names to which it refers are bound."
       (outline-minor-1 (:inherit (outline-minor-0 outline-1)))
 
       ;; Parenthesis matching (built-in)
-      (show-paren-match (:background ,iris :foreground ,background))
+      (show-paren-match (:background ,iris :foreground ,foreground :underline unspecified))
+      (show-paren-match-expression (:background ,love))
       (show-paren-mismatch (:background ,rose :foreground ,background))
 
       ;; rcirc (built-in)
