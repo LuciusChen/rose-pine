@@ -215,7 +215,7 @@ names to which it refers are bound."
       (font-lock-bracket-face (:foreground ,leaf))
       (font-lock-delimiter-face (:foreground ,iris))
       (font-lock-type-face (:foreground ,pine))
-      (font-lock-variable-name-face (:foreground ,love))
+      (font-lock-variable-name-face (:foreground ,rose))
       (font-lock-variable-use-face (:inherit font-lock-variable-name-face))
       (font-lock-warning-face (:weight bold :foreground ,rose))
       (shadow (:foreground ,comment))
