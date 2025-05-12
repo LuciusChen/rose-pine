@@ -989,9 +989,9 @@ names to which it refers are bound."
       (define-it-var-face (:foreground ,gold :bold t))
 
       ;; diff-hl
-      (diff-hl-insert (:foreground ,background :background ,leaf))
-      (diff-hl-change (:foreground ,background :background ,gold))
-      (diff-hl-delete (:foreground ,background :background ,rose))
+      (diff-hl-insert (:foreground ,background :background ,fg-added))
+      (diff-hl-change (:foreground ,background :background ,fg-changed))
+      (diff-hl-delete (:foreground ,background :background ,fg-removed))
 
       ;; dired
       (dired-marked (:foreground ,leaf))
