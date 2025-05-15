@@ -413,7 +413,7 @@ names to which it refers are bound."
       (flycheck-color-mode-line-success-face (:foreground ,leaf))
 
       ;; Flymake (built-in)
-      (flymake-end-of-line-diagnostics-face (:inherit italic :height 0.85 :box (:line-width 1)))
+      (flymake-end-of-line-diagnostics-face (:inherit italic :height 0.85 :underline t))
       (flymake-error (:underline (:style wave :color ,rose)))
       (flymake-error-echo (:inherit error))
       (flymake-error-echo-at-eol (:inherit flymake-end-of-line-diagnostics-face :foreground ,rose))
