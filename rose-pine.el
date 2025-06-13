@@ -1775,7 +1775,7 @@ names to which it refers are bound."
       ;; ztree
       (ztreep-arrow-face (:foreground ,highlight))
       (ztreep-diff-header-face (:foreground ,love :weight bold))
-      (ztreep-diff-header-small-face (:foregorund ,love))
+      (ztreep-diff-header-small-face (:foreground ,love))
       (ztreep-diff-model-add-face (:foreground ,leaf))
       (ztreep-diff-model-diff-face (:foreground ,rose))
       (ztreep-diff-model-ignored-face (:foreground ,gold))
@@ -1846,7 +1846,8 @@ names to which it refers are bound."
       (goggles-added (:background ,foam))
 
       ;; go-translate
-      (gt-buffer-render-block-prefix-face (:background ,contrast-bg :foregorund foregorund))
+      (gt-buffer-render-block-prefix-face (:background ,contrast-bg :foreground ,foreground))
+      (gt-buffer-render-source-face (:background ,background :foreground ,foreground))
 
       ))))
 
