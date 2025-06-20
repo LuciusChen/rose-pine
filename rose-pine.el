@@ -1381,6 +1381,15 @@ names to which it refers are bound."
       ;; macrostep
       (macrostep-expansion-highlight-face (:inherit highlight :foreground unspecified))
 
+      ;; smerge
+      (smerge-base (:inherit diff-changed))
+      (smerge-lower (:inherit diff-added))
+      (smerge-markers (:inherit diff-header))
+      (smerge-refined-added (:inherit diff-refine-added))
+      (smerge-refined-changed (()))
+      (smerge-refined-removed (:inherit diff-refine-removed))
+      (smerge-upper (:inherit diff-removed))
+
       ;; Magit
       (magit-bisect-bad (:foreground ,rose))
       (magit-bisect-good (:foreground ,leaf))
