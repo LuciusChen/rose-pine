@@ -1384,7 +1384,7 @@ names to which it refers are bound."
       ;; smerge
       (smerge-base (:inherit diff-changed))
       (smerge-lower (:inherit diff-added))
-      (smerge-markers (:inherit diff-header))
+      (smerge-markers (:background ,low-contrast-bg :foreground ,foreground))
       (smerge-refined-added (:inherit diff-refine-added))
       (smerge-refined-changed (()))
       (smerge-refined-removed (:inherit diff-refine-removed))
