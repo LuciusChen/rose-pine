@@ -60,7 +60,7 @@ executed."
   (rose-pine--interpolate background highlight 7 3))
 
 (defconst rose-pine-colors
-  '((night . ((background     . "#1e2021")
+  '((night . ((background     . "#1a1b1b")
               (alt-background . "#323740")
               (current-line   . "#26282e")
               (selection      . "#3D4252")
