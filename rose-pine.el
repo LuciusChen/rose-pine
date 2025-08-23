@@ -643,13 +643,13 @@ names to which it refers are bound."
       ;; org-modern
       (org-modern-date-active (:background ,highlight))
       (org-modern-date-inactive (:inherit org-modern-label :background ,highlight :foreground ,comment))
-      (org-modern-done (:inherit org-modern-label :background ,leaf :foreground ,foreground))
+      (org-modern-done (:inherit org-modern-label :weight bold :background ,leaf :foreground ,foreground))
       (org-modern-priority (:inherit (org-modern-label org-priority) :background ,highlight))
       (org-modern-statistics (:inherit org-modern-label :background ,highlight))
       (org-modern-tag (:inherit (org-modern-label org-tag) :background ,highlight))
       (org-modern-time-active (:inherit org-modern-label :background ,foam :foreground ,foreground))
       (org-modern-time-inactive (:inherit (org-modern-label org-modern-date-inactive)))
-      (org-modern-todo (:inherit org-modern-label :background ,rose :foreground ,foreground))
+      (org-modern-todo (:inherit org-modern-label :weight bold :background ,rose :foreground ,foreground))
       (org-modern-progress-complete (:background ,leaf :foreground ,foam))
       (org-modern-progress-incomplete (:background ,contrast-bg :foreground ,foreground))
 
