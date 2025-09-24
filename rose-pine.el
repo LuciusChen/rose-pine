@@ -249,6 +249,7 @@ names to which it refers are bound."
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,iris :box nil :weight bold))
       (minibuffer-prompt (:foreground ,pine))
+      (minibuffer-nonselected (:inverse-video t))
       (region (:background ,low-contrast-bg :inverse-video nil :extend t))
       (secondary-selection (:background ,contrast-bg :extend t))
       (rectangle-preview (:inherit secondary-selection))
@@ -307,6 +308,10 @@ names to which it refers are bound."
       (antlr-literal (:inherit font-lock-constant-face))
 
       ;; calendar (built-in)
+      (calendar-month-header (:inherit bold))
+      (calendar-today :foreground ,foam :inverse-video t :box (:line-width (-1 . -1) :color ,contrast-bg))
+      (calendar-weekday-header (:foreground ,comment))
+      (calendar-weekend-header (:foreground ,comment))
       (diary (:foreground ,love))
       (holiday (:foreground ,background :background ,gold))
 
@@ -606,7 +611,7 @@ names to which it refers are bound."
       (org-column (:background ,contrast-bg))
       (org-column-title (:inherit org-column :weight bold :underline t))
       (org-date (:foreground ,pine :underline t))
-      (org-date-selected (:foreground ,foam :inverse-video t))
+      (org-date-selected (:inherit calendar-today))
       (org-document-info (:foreground ,foam))
       (org-document-info-keyword (:foreground ,leaf))
       (org-document-title (:weight bold :foreground ,gold))
