@@ -69,7 +69,7 @@ executed."
               (rose           . "#ebbcba")
               (gold           . "#f6c177")
               (love           . "#eb6f92")
-              (amber          . "#dcdcaa")
+              (amber          . "#aab46f")
               (leaf           . "#95b1ac")
               (foam           . "#9ccfd8")
               (pine           . "#81a2be")
