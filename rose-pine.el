@@ -645,6 +645,9 @@ names to which it refers are bound."
       (org-upcoming-deadline (:foreground ,gold))
       (org-warning (:weight bold :foreground ,rose))
 
+      ;; org-remark
+      (org-remark-highlighter (:background ,highlight :underline t))
+
       ;; org-modern
       (org-modern-date-active (:background ,highlight))
       (org-modern-date-inactive (:inherit org-modern-label :background ,highlight :foreground ,comment))
