@@ -249,7 +249,7 @@ names to which it refers are bound."
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,iris :box nil :weight bold))
       (minibuffer-prompt (:foreground ,pine))
-      (minibuffer-nonselected (:foreground ,foreground :background ,love))
+      (minibuffer-nonselected (:foreground ,background :background ,love))
       (region (:background ,low-contrast-bg :inverse-video nil :extend t))
       (secondary-selection (:background ,contrast-bg :extend t))
       (rectangle-preview (:inherit secondary-selection))
