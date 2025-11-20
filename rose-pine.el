@@ -1866,6 +1866,8 @@ names to which it refers are bound."
       (gt-buffer-render-block-prefix-face (:background ,contrast-bg :foreground ,foreground))
       (gt-buffer-render-source-face (:background ,background :foreground ,foreground))
 
+      ;; breadcrumb
+      (breadcrumb-imenu-leaf-face (:inherit bold :background ,love :foreground ,background :box (:line-width (2 . 2) :color ,love)))
       ))))
 
 
