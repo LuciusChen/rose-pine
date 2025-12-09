@@ -226,7 +226,7 @@ names to which it refers are bound."
 
       ;; Emacs interface
       (cursor (:background ,love))
-      (fringe (:background ,low-contrast-bg :foreground ,comment))
+      (fringe (:background ,background :foreground ,comment))
       (menu (:background ,low-contrast-bg :foreground ,foreground))
       (scroll-bar (:background ,highlight :foreground ,pine))
       (tool-bar (:background ,highlight :foreground ,foreground))
