@@ -357,7 +357,7 @@ names to which it refers are bound."
 
       ;; calendar (built-in)
       (calendar-month-header (:inherit bold))
-      (calendar-today :foreground ,foam :inverse-video t :box (:line-width (-1 . -1) :color ,contrast-bg))
+      (calendar-today (:foreground ,foam :inverse-video t :box (:line-width (-1 . -1) :color ,contrast-bg)))
       (calendar-weekday-header (:foreground ,comment))
       (calendar-weekend-header (:foreground ,comment))
       (diary (:foreground ,love))
@@ -443,7 +443,7 @@ names to which it refers are bound."
       (eshell-ls-archive (:foreground ,pine))
       (eshell-ls-backup (:foreground ,comment))
       (eshell-ls-clutter (:foreground ,gold :weight bold))
-      (eshell-ls-directory :foreground ,pine :weight bold)
+      (eshell-ls-directory (:foreground ,pine :weight bold))
       (eshell-ls-executable (:foreground ,love :weight bold))
       (eshell-ls-missing (:foreground ,rose :weight bold))
       (eshell-ls-product (:foreground ,leaf))
