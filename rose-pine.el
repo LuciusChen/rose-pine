@@ -831,7 +831,7 @@ names to which it refers are bound."
       (tab-line-tab ())
       (tab-line-tab-current (:inherit bold :background ,background :foreground ,foreground :box (:line-width -2 :color ,background) :underline (:style line :color ,foreground)))
       (tab-line-tab-inactive (:background ,highlight :foreground ,comment :box (:line-width -2 :color ,background) ))
-      (tab-line-tab-modifie (:foreground ,gold))
+      (tab-line-tab-modified (:foreground ,gold))
 
       ;; which-function (built-in)
       (which-func (:foreground ,pine :background unspecified :weight bold))
@@ -964,7 +964,7 @@ names to which it refers are bound."
       (cider-test-error-face (:foreground ,contrast-bg :background ,gold))
       (cider-test-failure-face (:foreground ,contrast-bg :background ,rose))
       (cider-test-success-face (:foreground ,contrast-bg :background ,leaf))
-      (cider-traced-face (:box ,foam :line-width -1))
+      (cider-traced-face (:box (:color ,foam :line-width -1)))
       (cider-warning-highlight-face (:underline (:style wave :color ,love) :inherit unspecified))
 
       ;; Circe
@@ -1364,8 +1364,8 @@ names to which it refers are bound."
       (jabber-chat-text-error (:foreground ,rose))
 
       (jabber-roster-user-online (:foreground ,leaf))
-      (jabber-roster-user-xa :foreground ,comment)
-      (jabber-roster-user-dnd :foreground ,love)
+      (jabber-roster-user-xa (:foreground ,comment))
+      (jabber-roster-user-dnd (:foreground ,love))
       (jabber-roster-user-away (:foreground ,gold))
       (jabber-roster-user-chatty (:foreground ,iris))
       (jabber-roster-user-error (:foreground ,rose))
@@ -1455,7 +1455,7 @@ names to which it refers are bound."
       (magit-cherry-unmatched (:foreground ,foam))
       (magit-diff-added (:foreground ,fg-added :background ,bg-added-faint))
       (magit-diff-added-highlight (:foreground ,fg-added :background ,bg-added))
-      (magit-diff-base (background ,bg-changed-faint :foreground ,fg-changed))
+      (magit-diff-base (:background ,bg-changed-faint :foreground ,fg-changed))
       (magit-diff-base-highlight (:background ,bg-changed :foreground ,fg-changed))
       (magit-diff-context (:foreground ,comment :extend t))
       (magit-diff-context-highlight (:foreground ,comment :background ,highlight :extend t))
@@ -1705,7 +1705,7 @@ names to which it refers are bound."
       ;; syslog-mode
       (syslog-debug (:weight bold :foreground ,leaf))
       (syslog-error (:weight bold :foreground ,rose))
-      (syslog-hide (:foregound ,comment))
+      (syslog-hide (:foreground ,comment))
       (syslog-info (:weight bold :foreground ,pine))
       (syslog-su (:weight bold :foreground ,iris))
       (syslog-warn (:weight bold :foreground ,gold))
@@ -1842,7 +1842,7 @@ names to which it refers are bound."
       (ztreep-diff-model-ignored-face (:foreground ,gold))
       (ztreep-diff-model-normal-face (:foreground ,foreground))
       (ztreep-expand-sign-face (:foreground ,foreground))
-      (ztreep-header-face (:forground ,love :weight bold))
+      (ztreep-header-face (:foreground ,love :weight bold))
       (ztreep-leaf-face (:foreground ,foam))
       (ztreep-node-face (:foreground ,foreground))
 
