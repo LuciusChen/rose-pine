@@ -480,7 +480,7 @@ names to which it refers are bound."
       (gnus-button (:inherit link :foreground unspecified))
       (gnus-emphasis-highlight-words (:foreground ,love :background ,highlight))
       (gnus-header-content (:inherit message-header-other))
-      (gnus-header-from (:inherit message-header-other-face :weight bold :foreground ,gold))
+      (gnus-header-from (:inherit message-header-other :weight bold :foreground ,gold))
       (gnus-header-name (:inherit message-header-name))
       (gnus-header-newsgroups (:foreground ,love :slant italic))
       (gnus-header-subject (:inherit message-header-subject))
@@ -986,8 +986,8 @@ names to which it refers are bound."
       (clojure-java-call (:foreground ,iris))
 
       ;; Clojure errors
-      (clojure-test-failure-face (:background unspecified :inherit flymake-warnline))
-      (clojure-test-error-face (:background unspecified :inherit flymake-errline))
+      (clojure-test-failure-face (:background unspecified :inherit flymake-warning))
+      (clojure-test-error-face (:background unspecified :inherit flymake-error))
       (clojure-test-success-face (:background unspecified :foreground unspecified :underline ,leaf))
 
       ;; coffee-mode
@@ -1005,7 +1005,7 @@ names to which it refers are bound."
       (company-tooltip-search (:inherit company-tooltip :foreground ,pine))
       (company-tooltip-annotation (:inherit company-tooltip :foreground ,leaf))
       (company-tooltip-annotation-selection (:inherit company-tooltip-selection :foreground ,leaf))
-      (company-scrollbar-bg (:inherit 'company-tooltip :background ,highlight))
+      (company-scrollbar-bg (:inherit company-tooltip :background ,highlight))
       (company-scrollbar-fg (:background ,contrast-bg))
       (company-echo-common (:inherit company-echo :foreground ,rose))
 
@@ -1117,9 +1117,9 @@ names to which it refers are bound."
       (e2wm:face-history-list-select2 (:foreground ,love :background ,background))
 
       ;; EDTS errors
-      (edts-face-warning-line (:background unspecified :inherit flymake-warnline))
+      (edts-face-warning-line (:background unspecified :inherit flymake-warning))
       (edts-face-warning-mode-line (:background unspecified :foreground ,gold :weight bold))
-      (edts-face-error-line (:background unspecified :inherit flymake-errline))
+      (edts-face-error-line (:background unspecified :inherit flymake-error))
       (edts-face-error-mode-line (:background unspecified :foreground ,rose :weight bold))
 
       ;; Elfeed
